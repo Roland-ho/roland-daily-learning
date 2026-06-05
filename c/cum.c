@@ -1,11 +1,19 @@
 #include <stdio.h>
 int main () {
+
+
     int a,b;
-    printf("请输入两个整数\n");
-    scanf("%d %d",&a,&b);
+    printf("请输入整数\n");
+    
+    scanf("%d",&a);
+    printf("请输入整数");
+
+    scanf("%d",&b);
     printf("%d + %d = %d\n",a,b,a+b);
     printf("%d - %d = %d\n",a,b,a-b);
     printf("%d * %d = %d\n",a,b,a*b);
     printf("%d / %d = %d\n",a,b,a/b);                   
    return 0;
+
+
 }
