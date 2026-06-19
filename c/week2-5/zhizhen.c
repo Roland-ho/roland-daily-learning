@@ -1,23 +1,17 @@
 #include <stdio.h>
-#define ROWS 3
-#define COLS 4
 
-int main (void) {
-    int arr[ROWS][COLS] = {{10,20,30,40},
-                           {50,60,70,80},
-                           {120,110,100,90}};
-    int max = arr[0][0];
-    int *p = arr[0];
-    int i,j;
-    
-    for(i = 0;i<ROWS;i++){
-        for(j = 0;j<COLS;j++){
-            if(max < *(p+i*COLS + j))
-            max = *(p + i*COLS + j);
-        }
+int main (void){
+
+//     char arr[7][10] = {"MONDAY","TUESDAY","WEND","THU","FRI","STA","SUBN"};
+//     for(int i = 0;i<7;i++){
+//         printf ("%s\t",arr[i]);
+//     }
+
+    char *str_Arr[7] = {"MONDAY","TUESDAY","WEND","THU","FRI","STA","SUBN"};
+    for(int i = 0;i<7;i++){
+        printf ("%s\t",str_Arr[i]);
     }
-
-    printf("%d\n",max);
+    printf("\n");
 
 
     return 0;
